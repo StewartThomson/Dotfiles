@@ -1,4 +1,4 @@
 
 ### Dot Girl Summer
 
-Run bootstrap.sh and let your worries melt away
+Run `bootstrap && execstow` and let your worries melt away
