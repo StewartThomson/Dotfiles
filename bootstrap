@@ -33,7 +33,7 @@ sudo snap install spt
 #Get my password-store passwords (mostly for spotifyd)
 git clone git@github.com:StewartThomson/Dotfiles.git ~/.password-store/
 
-sudo chsh -s `which fish`
+chsh -s `which fish`
 
 sudo cp i3.desktop /usr/share/xsessions
 
