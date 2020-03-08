@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+#load dotfiles
+for d in */; do
+        stow $d
+done
