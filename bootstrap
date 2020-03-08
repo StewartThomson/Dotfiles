@@ -1,0 +1,39 @@
+#!/usr/bin/env bash
+
+sudo add-apt-repository ppa:kgilmer/speed-ricer
+sudo apt-get update
+
+sudo apt-get install -y i3-gaps-wm \
+	arc-theme \
+	fish \
+	flameshot \
+	feh \
+	fonts-firacode \
+	fzy \
+	git \
+	compton \
+	i3blocks \
+	i3lock \
+	i3status \
+	moka-icon-theme \
+	nnn \
+	pulseaudio \
+	python \
+	python-pip \
+	rofi \
+	screenfetch \
+	terminator \
+	vim \
+	pass \
+	stow
+
+#spotify-tui
+snap install spt
+
+#Get my password-store passwords (mostly for spotifyd)
+git clone https://github.com/StewartThomson/pass-store.git ~/dotfiles/.password-store/
+
+#load dotfiles
+for d in */; do
+	stow $d
+done

@@ -1,0 +1,10 @@
+#!/bin/sh
+
+case $BLOCK_BUTTON in
+	1) getify -c TOGGLE ;;
+	4) getify -c NEXT ;;
+	5) getify -c PREVIOUS ;;
+	*) ;;
+esac
+
+getify -c CURRENT_SONG
