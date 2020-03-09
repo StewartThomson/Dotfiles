@@ -32,3 +32,7 @@ export GOPATH=$HOME/go
 export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
 
 export PATH="$HOME/.cargo/bin:$PATH"
+
+alias xclip="xclip -selection c"
+
+export AWS_SDK_LOAD_CONFIG=1
