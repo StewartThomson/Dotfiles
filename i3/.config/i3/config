@@ -214,6 +214,7 @@ gaps inner 15
 gaps outer 60
 smart_gaps inverse_outer
 
-for_window [class="jetbrains-*"][window_type=dialog] focus
+for_window [class="jetbrains-.*" title="win0"] floating enable;
+for_window [class="jetbrains-.*"][window_type=dialog] focus
 for_window [class="^.*"] border pixel 5
 
