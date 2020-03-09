@@ -31,7 +31,7 @@ sudo apt-get install -y i3-gaps-wm \
 sudo snap install spt
 
 #Get my password-store passwords (mostly for spotifyd)
-git clone git@github.com:StewartThomson/Dotfiles.git ~/.password-store/
+git clone git@github.com:StewartThomson/pass-store.git ~/.password-store/
 
 chsh -s `which fish`
 
