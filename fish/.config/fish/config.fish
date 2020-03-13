@@ -9,5 +9,7 @@ set -gx PATH $HOME/.cargo/bin $PATH
 set -gx SPACEFISH_EXIT_CODE_SHOW true
 
 function fish_greeting
-	fortune | cowsay -f bud-frogs
+	fortune | cowsay -f bud-frogs | lolcat
 end
+
+fish_vi_key_bindings
