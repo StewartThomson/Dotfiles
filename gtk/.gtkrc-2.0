@@ -1,9 +1,9 @@
 # DO NOT EDIT! This file will be overwritten by LXAppearance.
 # Any customization should be done in ~/.gtkrc-2.0.mine instead.
 
-include "/home/stewart/.gtkrc-2.0.mine"
-gtk-theme-name="Arc-Dark"
-gtk-icon-theme-name="Moka"
+include "/home/stewartthomson/.gtkrc-2.0.mine"
+gtk-theme-name="oomox-gruvbox-light-hard"
+gtk-icon-theme-name="oomox-gruvbox-light-hard"
 gtk-font-name="Fira Code Medium 10"
 gtk-cursor-theme-name="DMZ-White"
 gtk-cursor-theme-size=0

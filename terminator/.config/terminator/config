@@ -24,6 +24,14 @@
     font = Font Awesome 5 Free 10
     foreground_color = "#ecf0c1"
     palette = "#6e5346:#e35b00:#5cab96:#e3cd7b:#0f548b:#e35b00:#06afc7:#f0f1ce:#684c31:#ff8a3a:#aecab8:#ffc878:#67a0ce:#ff8a3a:#83a7b4:#fefff1"
+  [[Gruvbox Dark]]
+    background_color = "#1e1e1e"
+    background_darkness = 0.9
+    background_type = transparent
+    cursor_color = "#bbbbbb"
+    font = Font Awesome 5 Free 10
+    foreground_color = "#e6d4a3"
+    palette = "#161819:#f73028:#aab01e:#f7b125:#719586:#c77089:#7db669:#faefbb:#7f7061:#be0f17:#868715:#cc881a:#377375:#a04b73:#578e57:#e6d4a3"
   [[Spacedust]]
     background_color = "#0a1e24"
     background_darkness = 0.8

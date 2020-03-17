@@ -2,3 +2,4 @@ fish/.config/fish/functions
 fish/.config/fish/completions
 fish/.config/fish/conf.d
 *.pyc
+vim/.vim/bundle

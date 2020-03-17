@@ -205,16 +205,24 @@ bindsym $mod+Ctrl+less move workspace to output left
 
 #exec_always --no-startup-id feh --bg-scale ~/.config/pics/coolbackground.jpg
 #exec_always --no-startup-id feh --bg-scale ~/.config/pics/pink.jpg
-exec_always --no-startup-id feh --bg-scale ~/.config/pics/vaporwave.jpg
+#exec_always --no-startup-id feh --bg-scale ~/.config/pics/vaporwave.jpg
+exec_always --no-startup-id feh --bg-scale ~/.config/pics/tycho.png
 exec_always --no-startup-id compton --config ~/.config/compton.conf -b
 
 exec --no-startup-id getify -d
 
 gaps inner 15
-gaps outer 60
-smart_gaps inverse_outer
+gaps outer 15
+smart_gaps on
 
 for_window [class="jetbrains-.*" title="win0"] floating enable;
 for_window [class="jetbrains-.*"][window_type=dialog] focus
 for_window [class="^.*"] border pixel 5
 
+#exec --no-startup-id xrandr --output VGA-1 --off --output DVI-D-1-1 --off --output DP-2-1 --mode 1920x1080 --pos 3000x360 --rotate normal --output DP-2-2 --mode 1920x1080 --pos 1920x0 --rotate left --output DP-2-3 --off --output eDP-1 --primary --mode 1920x1080 --pos 0x736 --rotate normal --output eDP-1-2 --off --output HDMI-2 --off --output HDMI-1 --off --output DP-2 --off --output DP-1 --off
+
+#exec --no-startup-id xrandr --output VGA-1 --off --output DVI-D-1-1 --off --output DP-2-1 --mode 1920x1080 --pos 3840x464 --rotate normal --output DP-2-2 --mode 1920x1080 --pos 1920x560 --rotate normal --output DP-2-3 --off --output eDP-1 --primary --mode 1920x1080 --pos 0x736 --rotate normal --output eDP-1-2 --off --output HDMI-2 --off --output HDMI-1 --off --output DP-2 --off --output DP-1 --off
+
+bindsym Print exec flameshot gui
+bindsym --whole-window button9 exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next
+bindsym --whole-window button8 exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous
