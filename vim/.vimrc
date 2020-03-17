@@ -43,3 +43,6 @@ set ruler
 
 let base16colorspace=256
 colorscheme base16-gruvbox-dark-hard
+
+hi Normal ctermbg=none
+hi NonText ctermbg=none
