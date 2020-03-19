@@ -3,7 +3,7 @@ configuration {
 /*	width: 100;*/
 /*	lines: 10;*/
 /*	columns: 1;*/
-	font: "Fira Code Light 13";
+	font: "Fira Code Nerd Font Medium 13";
 /*	bw: 1;*/
 /*	location: 0;*/
 /*	padding: 800;*/
