@@ -250,5 +250,6 @@ for_window [class="^.*"] border pixel 5
 #exec --no-startup-id xrandr --output VGA-1 --off --output DVI-D-1-1 --off --output DP-2-1 --mode 1920x1080 --pos 3840x464 --rotate normal --output DP-2-2 --mode 1920x1080 --pos 1920x560 --rotate normal --output DP-2-3 --off --output eDP-1 --primary --mode 1920x1080 --pos 0x736 --rotate normal --output eDP-1-2 --off --output HDMI-2 --off --output HDMI-1 --off --output DP-2 --off --output DP-1 --off
 
 bindsym Print exec flameshot gui
+bindsym $mod+Ctrl+p exec flameshot gui
 bindsym --whole-window button9 exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next
 bindsym --whole-window button8 exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous
