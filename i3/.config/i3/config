@@ -226,9 +226,12 @@ bar {
 	}
 }
 
-bindsym $mod+Shift+m exec ~/.config/i3/lock
+bindsym $mod+Shift+m exec --no-startup-id ~/.config/i3/lock
 bindsym $mod+Ctrl+greater move workspace to output right
 bindsym $mod+Ctrl+less move workspace to output left
+
+
+
 
 exec_always --no-startup-id feh --bg-scale ~/.config/pics/tycho2.jpg
 exec_always --no-startup-id compton --config ~/.config/compton.conf -b
@@ -242,6 +245,29 @@ smart_gaps on
 for_window [class="jetbrains-.*" title="win0"] floating enable;
 for_window [class="jetbrains-.*"][window_type=dialog] focus
 for_window [class="^.*"] border pixel 5
+
+
+
+exec --no-startup-id spotify
+for_window [class="Spotify"] mark "music"
+for_window [con_mark="music"] resize set 1700 800
+for_window [con_mark="music"] floating enable
+for_window [con_mark="music"] move scratchpad 
+for_window [con_mark="music"] border pixel 15
+
+bindsym $mod+y [con_mark="music"] scratchpad show; [con_mark="music"] move position center
+
+
+exec --no-startup-id slack
+for_window [class="Slack"] mark "slack"
+for_window [con_mark="slack"] floating enable
+for_window [con_mark="slack"] move scratchpad
+for_window [con_mark="slack"] resize set 1700 800
+for_window [con_mark="slack"] border pixel 15
+
+bindsym $mod+t [con_mark="slack"] scratchpad show; [con_mark="slack"] move position center
+
+
 
 #Work screens
 #exec --no-startup-id xrandr --output VGA-1 --off --output DVI-D-1-1 --off --output DP-2-1 --mode 1920x1080 --pos 3000x360 --rotate normal --output DP-2-2 --mode 1920x1080 --pos 1920x0 --rotate left --output DP-2-3 --off --output eDP-1 --primary --mode 1920x1080 --pos 0x736 --rotate normal --output eDP-1-2 --off --output HDMI-2 --off --output HDMI-1 --off --output DP-2 --off --output DP-1 --off
