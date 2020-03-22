@@ -13,3 +13,8 @@ function fish_greeting
 end
 
 fish_vi_key_bindings
+
+alias vim="nvim"
+alias vi="nvim"
+alias ll="ls -l"
+alias la="ls -a"

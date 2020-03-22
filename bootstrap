@@ -23,7 +23,6 @@ sudo apt-get install -y i3-gaps-wm \
 	rofi \
 	screenfetch \
 	terminator \
-	vim \
 	pass \
 	stow \
 	fortune \
@@ -33,6 +32,8 @@ sudo apt-get install -y i3-gaps-wm \
 
 #spotify-tui
 sudo snap install spt
+
+sudo snap install --edge nvim --classic
 
 #Get my password-store passwords (mostly for spotifyd)
 git clone git@github.com:StewartThomson/pass-store.git ~/.password-store/

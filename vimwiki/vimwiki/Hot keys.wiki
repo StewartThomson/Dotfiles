@@ -1,0 +1,25 @@
+= Vim Hot Keys=
+
+== Vim ==
+
+	* _Ctrl+r_: redo
+	* _gt_: next tab
+	* _gT_: previous tab
+
+== vimwiki ==
+
+	* _<Leader>ws_: Select & open wiki file
+	* _<Shift-Enter>_: Split and follow link
+	* _<Backspace>_: Go to parent wiki link
+	* _<Tab>_: Find next wiki link
+
+== vim-surround ==
+=== While inside some surrounding (brackets, quotes, tags, etc.) ===
+==== In these commands, 't' can be used for generic tags ====
+
+	* _cs<current><desired>_: Changes surrounding
+	* _ds<current>_: Deletes surrounding
+	* _ys<object>_: Adds surrounding to object
+		- For example, _ysiw]_ adds square brackets. Use _[_ to add space between
+	* _S<surrounding>_: While in visual mode, this will surround the selected line
+
