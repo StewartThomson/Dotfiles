@@ -56,3 +56,17 @@ hi NonText ctermbg=none
 	map <leader>n :NERDTreeToggle<CR>
 	autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
+	inoremap <Down> <Nop>
+	inoremap <Left> <Nop>
+	inoremap <Right> <Nop>
+	inoremap <Up> <Nop>
+
+	nnoremap <Down> <Nop>
+	nnoremap <Left> <Nop>
+	nnoremap <Right> <Nop>
+	nnoremap <Up> <Nop>
+
+	vnoremap <Down> <Nop>
+	vnoremap <Left> <Nop>
+	vnoremap <Right> <Nop>
+	vnoremap <Up> <Nop>
