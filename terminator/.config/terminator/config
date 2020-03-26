@@ -18,7 +18,7 @@
 [profiles]
   [[default]]
     background_color = "#0a1e24"
-    background_darkness = 0.9
+    background_darkness = 0.8
     background_type = transparent
     cursor_color = "#708284"
     font = Font Awesome 5 Free 10
@@ -26,7 +26,7 @@
     palette = "#6e5346:#e35b00:#5cab96:#e3cd7b:#0f548b:#e35b00:#06afc7:#f0f1ce:#684c31:#ff8a3a:#aecab8:#ffc878:#67a0ce:#ff8a3a:#83a7b4:#fefff1"
   [[Gruvbox Dark]]
     background_color = "#1e1e1e"
-    background_darkness = 0.9
+    background_darkness = 0.8
     background_type = transparent
     cursor_color = "#bbbbbb"
     font = FiraCode Nerd Font Mono weight=450 10

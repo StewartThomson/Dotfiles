@@ -36,7 +36,7 @@ sudo snap install spt
 sudo snap install --edge nvim --classic
 
 #Get my password-store passwords (mostly for spotifyd)
-git clone git@github.com:StewartThomson/pass-store.git ~/.password-store/
+git clone git@github.com:StewartThomson/pass-store.git $XDG_DATA_HOME/pass
 
 chsh -s `which fish`
 
