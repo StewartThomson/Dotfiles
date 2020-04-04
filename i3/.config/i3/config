@@ -217,7 +217,7 @@ bar {
 		background $bg
 		# text color used for blocks that do not have a color specified.
 		statusline $yellow
-		# workspaces section            
+		# workspaces section
 		#                    border  backgr. text
 		focused_workspace    $aqua $aqua $darkgray
 		inactive_workspace   $darkgray $darkgray $yellow
@@ -233,7 +233,8 @@ bindsym $mod+Ctrl+less move workspace to output left
 
 
 
-exec_always --no-startup-id feh --bg-scale ~/.config/pics/tycho2.jpg
+#exec_always --no-startup-id feh --bg-scale ~/.config/pics/tycho2.jpg
+exec_always --no-startup-id feh --bg-scale ~/.config/pics/robobart.png
 exec_always --no-startup-id compton --config ~/.config/compton.conf -b
 
 exec --no-startup-id getify -d
@@ -252,7 +253,7 @@ exec --no-startup-id spotify
 for_window [class="Spotify"] mark "music"
 for_window [con_mark="music"] resize set 1700 800
 for_window [con_mark="music"] floating enable
-for_window [con_mark="music"] move scratchpad 
+for_window [con_mark="music"] move scratchpad
 for_window [con_mark="music"] border pixel 15
 
 bindsym $mod+y [con_mark="music"] scratchpad show; [con_mark="music"] move position center
