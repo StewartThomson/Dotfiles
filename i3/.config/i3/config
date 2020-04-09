@@ -269,7 +269,7 @@ bindsym $mod+t [con_mark="slack"] scratchpad show; [con_mark="slack"] move posit
 #exec --no-startup-id xrandr --output VGA-1 --off --output DVI-D-1-1 --off --output DP-2-1 --mode 1920x1080 --pos 3000x360 --rotate normal --output DP-2-2 --mode 1920x1080 --pos 1920x0 --rotate left --output DP-2-3 --off --output eDP-1 --primary --mode 1920x1080 --pos 0x736 --rotate normal --output eDP-1-2 --off --output HDMI-2 --off --output HDMI-1 --off --output DP-2 --off --output DP-1 --off
 
 #WFH
-#exec --no-startup-id xrandr --output VGA-1 --off --output DVI-D-1-1 --off --output DP-2-1 --mode 1920x1080 --pos 3840x464 --rotate normal --output DP-2-2 --mode 1920x1080 --pos 1920x560 --rotate normal --output DP-2-3 --off --output eDP-1 --primary --mode 1920x1080 --pos 0x736 --rotate normal --output eDP-1-2 --off --output HDMI-2 --off --output HDMI-1 --off --output DP-2 --off --output DP-1 --off
+#exec_always --no-startup-id xrandr --output VGA-1 --off --output DVI-D-1-1 --off --output DP-2-1 --mode 1920x1080 --pos 3840x464 --rotate normal --output DP-2-2 --mode 1920x1080 --pos 1920x560 --rotate normal --output DP-2-3 --off --output eDP-1 --primary --mode 1920x1080 --pos 0x736 --rotate normal --output eDP-1-2 --off --output HDMI-2 --off --output HDMI-1 --off --output DP-2 --off --output DP-1 --off
 
 #Home
 #exec --no-startup-id xrandr --output HDMI-0 --mode 1920x1080 --pos 0x0 --rotate normal --output DP-5 --off --output DP-4 --off --output DP-3 --off --output DP-2 --off --output DP-1 --off --output DP-0 --primary --mode 1920x1080 --pos 1920x0 --rotate normal --rate 144
