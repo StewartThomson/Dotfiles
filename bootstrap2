@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 mkdir $HOME/code
-git clone https://github.com/polybar/polybar.git $HOME/code/
+git clone https://github.com/polybar/polybar.git $HOME/code/polybar
 
 pip3 install --user wpgtk
 
