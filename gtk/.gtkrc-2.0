@@ -2,7 +2,7 @@
 # Any customization should be done in ~/.gtkrc-2.0.mine instead.
 
 include "/home/stewart/.gtkrc-2.0.mine"
-gtk-theme-name="oomox-gruvbox-light-hard"
+gtk-theme-name="FlatColor"
 gtk-icon-theme-name="oomox-gruvbox-light-hard"
 gtk-font-name="FiraCode Nerd Font Medium 10"
 gtk-cursor-theme-name="DMZ-White"

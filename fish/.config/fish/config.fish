@@ -17,6 +17,8 @@ alias vi="nvim"
 alias ll="ls -l"
 alias la="ls -a"
 
+source ~/.cache/wal/colors.fish
+cat ~/.config/wpg/sequences &
 
 ### Environment
 #### Path
