@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+for d in $HOME/.config/JetBrains/*/ ; do
+	. ./intellijPywalGen.sh $d
+done

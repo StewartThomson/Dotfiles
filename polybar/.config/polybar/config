@@ -1,21 +1,24 @@
 [colors]
-background = ${xrdb:color8:#8c8f8b}
-foreground = ${xrdb:color15:#c8cdc7}
-active = #7b4c44
-inactive = #55342f
-highlight = ${xrdb:color2:#C75E53}
-error = ${xrdb:color9:#9B5F56}
+background = ${xrdb:color8:#a88676}
+foreground = ${xrdb:color15:#f1c0aa}
+active = #224350
+inactive = #172e37
+highlight = ${xrdb:color2:#365F6F}
+error = ${xrdb:color9:#2B5565}
 
 [bar/bottom]
 monitor = ${env:MONITOR:}
 width = 100%
-height = 24
-offset-y = 0%
+height = 27
+offset-y = 5
 radius = 0.0
-fixed-center = true
+fixed-center = false
+
+overline-size = 2
+underline-size = 2
 
 bottom = true
-background = ${colors.background}
+background = ${colors.highlight}
 foreground = ${colors.foreground}
 
 line-size = 0
@@ -27,17 +30,17 @@ border-color = #00000000
 padding-left = 0
 padding-right = 0
 
-module-margin-left = 0
-module-margin-right = 0
+module-margin-left = 1
+module-margin-right = 1
+separator = |
 
-font-0 = menlo:fontformat=truetype:size=8;1
-font-1 = FiraCodeNerdFont:style=Regular:size=10;2
+font-0 = FiraCode Nerd Font Mono:style=Regular:size=12
 
-modules-left = i3 xwindow
+modules-left = i3 xwindow cpu
 modules-center = date
-modules-right =  volume wlan eth battery
+modules-right = temperature memory volume wlan eth battery
 
-tray-position = none
+tray-position = right
 tray-padding = 10
 tray-background = ${colors.inactive}
 
@@ -49,10 +52,11 @@ label = %title:0:25: ...%
 
 [module/i3]
 type = internal/i3
-format = <label-mode><label-state>
+format = <label-state> <label-mode>
 index-sort = true
 wrapping-scroll = false
 fuzzy-matching = true
+enable-click = true
 
 ; Only show workspaces on the same output as the bar
 pin-workspaces = true
@@ -112,28 +116,45 @@ date = "%d %b %Y, "
 time = %I:%M %p
 
 format-padding = 1
-format-background = ${colors.background}
+format-background = ${colors.highlight}
 
 label = %date%%time%
 
 [module/volume]
-type = internal/alsa
+type = internal/pulseaudio
+format-volume-background = ${colors.highlight}
 
-format-volume = <ramp-volume> <label-volume>
-format-volume-padding = 1
-format-volume-background = ${colors.active}
-ramp-volume-0 = 
-ramp-volume-1 = 
-ramp-volume-2 = 
-ramp-volume-3 = 
-ramp-volume-foreground = ${colors.foreground}
+; Available tags:
+;   <label-volume> (default)
+;   <ramp-volume>
+;   <bar-volume>
+format-volume =  <ramp-volume> <label-volume>
 
-format-muted-prefix = " "
-format-muted-foreground = ${colors.background}
-format-muted-background = ${colors.error}
-label-muted = MUTED
-format-muted-padding = 1
+; Available tags:
+;   <label-muted> (default)
+;   <ramp-volume>
+;   <bar-volume>
+format-muted = <label-muted>
 
+; Available tokens:
+;   %percentage% (default)
+;   %decibels% (unreleased)
+label-volume = %percentage%%
+
+; Available tokens:
+;   %percentage% (default)
+;   %decibels% (unreleased)
+label-muted = 🔇 muted
+label-muted-foreground = #666
+
+; Only applies if <ramp-volume> is used
+ramp-volume-0 = 🔈
+ramp-volume-1 = 🔉
+ramp-volume-2 = 🔊
+
+; Right and Middle click (unreleased)
+click-right = pavucontrol &
+; click-middle =
 [module/battery]
 type = internal/battery
 battery = BAT0
@@ -164,6 +185,93 @@ animation-charging-3 = 
 animation-charging-4 = 
 format-charging-background = ${colors.highlight}
 format-discharging-background = ${colors.active}
+
+[module/memory]
+type = internal/memory
+format = <label>
+format-background = ${colors.highlight}
+
+; Available tokens:
+;   %percentage_used% (default)
+;   %percentage_free%
+;   %gb_used%
+;   %gb_free%
+;   %gb_total%
+;   %mb_used%
+;   %mb_free%
+;   %mb_total%
+;   %percentage_swap_used%
+;   %percentage_swap_free%
+;   %mb_swap_total%
+;   %mb_swap_free%
+;   %mb_swap_used%
+;   %gb_swap_total%
+;   %gb_swap_free%
+;   %gb_swap_used%
+
+label =  %gb_used%/%gb_free% SWAP %gb_swap_used%/%gb_swap_free%
+
+[module/temperature]
+type = internal/temperature
+interval = 0.5
+
+base-temperature = 20
+
+warn-temperature = 60
+
+units = false
+
+; Available tags:
+;   <label> (default)
+;   <ramp>
+format = <ramp> <label>
+format-background = ${colors.highlight}
+
+; Available tags:
+;   <label-warn> (default)
+;   <ramp>
+format-warn = <ramp> <label-warn>
+
+; Available tokens:
+;   %temperature% (deprecated)
+;   %temperature-c%   (default, temperature in °C)
+;   %temperature-f%   (temperature in °F)
+label = TEMP %temperature-c%
+
+; Available tokens:
+;   %temperature% (deprecated)
+;   %temperature-c%   (default, temperature in °C)
+;   %temperature-f%   (temperature in °F)
+label-warn = TEMP %temperature-c%
+label-warn-foreground = #f00
+
+; Requires the <ramp> tag
+; The icon selection will range from `base-temperature` to `warn-temperature`,
+; temperatures above `warn-temperature` will use the last icon
+; and temperatures below `base-temperature` will use `ramp-0`
+ramp-0 = A
+ramp-1 = B
+ramp-2 = C
+ramp-foreground = #55
+
+[module/cpu]
+type = internal/cpu
+
+; Available tags:
+;   <label> (default)
+;   <bar-load>
+;   <ramp-load>
+;   <ramp-coreload>
+format = <label>
+
+; Available tokens:
+;   %percentage% (default) - total cpu load averaged over all cores
+;   %percentage-sum% - Cumulative load on all cores
+;   %percentage-cores% - load percentage for each core
+;   %percentage-core[1-9]% - load percentage for specific core
+label =  %percentage%%
+format-background = ${colors.highlight}
+
 
 [settings]
 screenchange-reload = true
