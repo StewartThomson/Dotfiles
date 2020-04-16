@@ -97,7 +97,9 @@ bindsym $mod+Ctrl+p exec --no-startup-id flameshot gui
 bindsym $mod+y [con_mark="music"] scratchpad show; [con_mark="music"] move position center
 bindsym $mod+t [con_mark="slack"] scratchpad show; [con_mark="slack"] move position center
 
-# scratchpad terminal
+bindsym $mod+Shift+m exec --no-startup-id ~/.config/i3/lock
+bindsym $mod+Ctrl+greater move workspace to output right
+bindsym $mod+Ctrl+less move workspace to output left
 
 # switch to workspace
 bindsym $mod+1 workspace 1
