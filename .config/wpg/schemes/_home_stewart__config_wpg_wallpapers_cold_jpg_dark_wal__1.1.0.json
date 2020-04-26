@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/stewart/.config/wpg/wallpapers/cold.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#331f2a",
+        "foreground": "#f4dddd",
+        "cursor": "#f4dddd"
+    },
+    "colors": {
+        "color0": "#331f2a",
+        "color1": "#adc7e8",
+        "color2": "#b6c1e4",
+        "color3": "#a0add5",
+        "color4": "#8ca9cb",
+        "color5": "#aebfe4",
+        "color6": "#cca1d7",
+        "color7": "#cbd6e8",
+        "color8": "#4f3045",
+        "color9": "#b9e3e8",
+        "color10": "#c2d4e8",
+        "color11": "#b4c8e8",
+        "color12": "#9cd2ea",
+        "color13": "#bcdbe8",
+        "color14": "#e8b5e8",
+        "color15": "#f4dddd"
+    }
+}

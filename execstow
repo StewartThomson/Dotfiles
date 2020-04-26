@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-rm ~/.config/gtk-3.0/settings.ini
-rm ~/.gtkrc-2.0
-
-#load dotfiles
-for d in */; do
-        stow $d --verbose=5
-done
