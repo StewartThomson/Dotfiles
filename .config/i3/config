@@ -4,14 +4,14 @@
 
 set $mod Mod4
 set $alt Mod1
-set $coloract "#90a0b9"
-set $colorin "#636e7f"
+set $coloract "#ca90cb"
+set $colorin "#8b638c"
 set $terminal i3-sensible-terminal
-set_from_resource $color15 i3wm.color15 "#f4dddd"
-set_from_resource $split i3wm.color10 "#c2d4e8"
-set_from_resource $coloru i3wm.color2 "#b6c1e4"
-set_from_resource $color0 i3wm.color0 "#331f2a"
-set_from_resource $color8 i3wm.color8 "#4f3045"
+set_from_resource $color15 i3wm.color15 "#fbfeff"
+set_from_resource $split i3wm.color10 "#9ccaff"
+set_from_resource $coloru i3wm.color2 "#889db5"
+set_from_resource $color0 i3wm.color0 "#24181e"
+set_from_resource $color8 i3wm.color8 "#422b37"
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -85,11 +85,11 @@ bindsym $mod+p focus parent
 
 ###### EXECUTE PROGRAMS ######
 
-bindsym $mod+$alt+t  exec wpg -m
-bindsym $mod+Return  exec $terminal
+bindsym $mod+$alt+t  exec --no-startup-id wpg -m
+bindsym $mod+Return  exec --no-startup-id $terminal
 bindsym $mod+Shift+q kill
-bindsym $mod+d       exec rofi -show run -lines 10 -eh 2 -font "Fira Code Nerd Font Medium 18"
-bindsym $mod+Tab     exec rofi -show window
+bindsym $mod+d       exec --no-startup-id rofi -show run -lines 10 -eh 2 -font "Fira Code Nerd Font Medium 18"
+bindsym $mod+Tab     exec --no-startup-id rofi -show window
 bindsym $mod+v exec --no-startup-id i3-sensible-terminal -x vim -c "VimwikiIndex"
 bindsym Print exec --no-startup-id flameshot gui
 bindsym $mod+Ctrl+p exec --no-startup-id flameshot gui
