@@ -93,6 +93,7 @@ bindsym $mod+Tab     exec --no-startup-id rofi -show window
 bindsym $mod+v exec --no-startup-id i3-sensible-terminal -x vim -c "VimwikiIndex"
 bindsym Print exec --no-startup-id flameshot gui
 bindsym $mod+Ctrl+p exec --no-startup-id flameshot gui
+bindsym $mod+Ctrl+k exec --no-startup-id ~/bin/switch-audio-output.sh
 
 bindsym $mod+y [con_mark="music"] scratchpad show; [con_mark="music"] move position center
 bindsym $mod+t [con_mark="slack"] scratchpad show; [con_mark="slack"] move position center
