@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/stewartthomson/.config/wpg/wallpapers/cold.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#31212d",
+        "foreground": "#dce1ea",
+        "cursor": "#dce1ea"
+    },
+    "colors": {
+        "color0": "#31212d",
+        "color1": "#98ADC6",
+        "color2": "#ADB5CF",
+        "color3": "#CAAED1",
+        "color4": "#B8C4DA",
+        "color5": "#BBCCE2",
+        "color6": "#C4CADD",
+        "color7": "#dce1ea",
+        "color8": "#9a9da3",
+        "color9": "#98ADC6",
+        "color10": "#ADB5CF",
+        "color11": "#CAAED1",
+        "color12": "#B8C4DA",
+        "color13": "#BBCCE2",
+        "color14": "#C4CADD",
+        "color15": "#dce1ea"
+    }
+}
