@@ -1,10 +1,10 @@
 [colors]
-background = ${xrdb:color8:#422b37}
-foreground = ${xrdb:color15:#fbfeff}
-active = #ca90cb
-inactive = #8b638c
-highlight = ${xrdb:color2:#889db5}
-error = ${xrdb:color9:#b4cbff}
+background = ${xrdb:color8:#a4a09e}
+foreground = ${xrdb:color15:#ebe5e3}
+active = #cb6b42
+inactive = #8c492d
+highlight = ${xrdb:color2:#E28A70}
+error = ${xrdb:color9:#FF8653}
 
 [bar/bottom]
 monitor = ${env:MONITOR:}

@@ -4,14 +4,14 @@
 
 set $mod Mod4
 set $alt Mod1
-set $coloract "#ca90cb"
-set $colorin "#8b638c"
+set $coloract "#cb6b42"
+set $colorin "#8c492d"
 set $terminal i3-sensible-terminal
-set_from_resource $color15 i3wm.color15 "#fbfeff"
-set_from_resource $split i3wm.color10 "#9ccaff"
-set_from_resource $coloru i3wm.color2 "#889db5"
-set_from_resource $color0 i3wm.color0 "#24181e"
-set_from_resource $color8 i3wm.color8 "#422b37"
+set_from_resource $color15 i3wm.color15 "#ebe5e3"
+set_from_resource $split i3wm.color10 "#E28A70"
+set_from_resource $coloru i3wm.color2 "#E28A70"
+set_from_resource $color0 i3wm.color0 "#103342"
+set_from_resource $color8 i3wm.color8 "#a4a09e"
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -93,7 +93,7 @@ bindsym $mod+Tab     exec --no-startup-id rofi -show window
 bindsym $mod+v exec --no-startup-id i3-sensible-terminal -x vim -c "VimwikiIndex"
 bindsym Print exec --no-startup-id flameshot gui
 bindsym $mod+Ctrl+p exec --no-startup-id flameshot gui
-bindsym $mod+Ctrl+k exec --no-startup-id ~/bin/switch-sound-output.sh
+bindsym $mod+Ctrl+k exec --no-startup-id ~/bin/switch-audio-output.sh
 
 bindsym $mod+y [con_mark="music"] scratchpad show; [con_mark="music"] move position center
 bindsym $mod+t [con_mark="slack"] scratchpad show; [con_mark="slack"] move position center
@@ -185,7 +185,8 @@ exec --no-startup-id ~/.screenlayout/screens.sh
 hide_edge_borders both
 gaps inner 15
 gaps outer 15
-smart_gaps on
+smart_gaps inverse_outer
+smart_borders on
 
 ###### STARTUP ######
 

@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/stewart/.config/wpg/wallpapers/liketycho.jpeg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#103342",
+        "foreground": "#ebe5e3",
+        "cursor": "#ebe5e3"
+    },
+    "colors": {
+        "color0": "#103342",
+        "color1": "#FF8653",
+        "color2": "#E28A70",
+        "color3": "#597582",
+        "color4": "#ADACAC",
+        "color5": "#F4AD92",
+        "color6": "#F9C7AD",
+        "color7": "#ebe5e3",
+        "color8": "#a4a09e",
+        "color9": "#FF8653",
+        "color10": "#E28A70",
+        "color11": "#597582",
+        "color12": "#ADACAC",
+        "color13": "#F4AD92",
+        "color14": "#F9C7AD",
+        "color15": "#ebe5e3"
+    }
+}

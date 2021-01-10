@@ -185,7 +185,8 @@ exec --no-startup-id ~/.screenlayout/screens.sh
 hide_edge_borders both
 gaps inner 15
 gaps outer 15
-smart_gaps on
+smart_gaps inverse_outer
+smart_borders
 
 ###### STARTUP ######
 
