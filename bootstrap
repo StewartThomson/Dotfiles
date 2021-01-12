@@ -11,7 +11,7 @@ sudo apt-get install -y i3-gaps-wm \
 	fonts-firacode \
 	fzy \
 	git \
-	compton \
+	picom \
 	i3blocks \
 	i3lock \
 	i3status \
@@ -52,7 +52,8 @@ sudo apt-get install -y i3-gaps-wm \
 	libxcb-ewmh-dev \
 	libxcb-icccm4-dev \
 	libjsoncpp-dev \
-	libcurl4-openssl-dev
+	libcurl4-openssl-dev \
+	oomox
 
 
 #spotify-tui
