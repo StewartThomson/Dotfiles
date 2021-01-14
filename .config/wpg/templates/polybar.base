@@ -214,7 +214,7 @@ label =  %gb_used%/%gb_free% SWAP %gb_swap_used%/%gb_swap_free%
 [module/temperature]
 type = internal/temperature
 interval = 0.5
-
+thermal-zone = 2
 base-temperature = 20
 
 warn-temperature = 60
