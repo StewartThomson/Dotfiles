@@ -22,7 +22,7 @@ cat ~/.config/wpg/sequences &
 
 ### Environment
 #### Path
-set -gx PATH $HOME/.cargo/bin $PATH
+set -gx PATH $HOME/.cargo/bin /var/lib/flatpak/exports/bin $PATH
 
 #### XDG System
 set -gx XDG_DATA_DIRS /usr/share /usr/local/share

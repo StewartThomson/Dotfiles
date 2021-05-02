@@ -1,32 +1,32 @@
 #modded Numix gtkrc
 
-gtk-color-scheme = "bg_color:#103342
-color0:#103342
-color1:#FF8653
-color2:#E28A70
-color3:#597582
-color4:#ADACAC
-color5:#F4AD92
-color6:#F9C7AD
-color7:#ebe5e3
-color8:#a4a09e
-color9:#FF8653
-color10:#E28A70
-color11:#597582
-color12:#ADACAC
-color13:#F4AD92
-color14:#F9C7AD
-color15:#ebe5e3
-text_color:#ebe5e3
-selected_bg_color:#cb6b42
-selected_fg_color:#ebe5e3
-tooltip_bg_color:#103342
-tooltip_fg_color:#ebe5e3
-titlebar_bg_color:#103342
-titlebar_fg_color:#ebe5e3
-menu_bg_color:#103342
-menu_fg_color:#ebe5e3
-link_color:#cb6b42"
+gtk-color-scheme = "bg_color:#0A0C0E
+color0:#0A0C0E
+color1:#6ABCA9
+color2:#98989A
+color3:#AFAEB1
+color4:#CCAAAA
+color5:#C2CAAF
+color6:#A2D2C5
+color7:#dedee0
+color8:#9b9b9c
+color9:#6ABCA9
+color10:#98989A
+color11:#AFAEB1
+color12:#CCAAAA
+color13:#C2CAAF
+color14:#A2D2C5
+color15:#dedee0
+text_color:#dedee0
+selected_bg_color:#549687
+selected_fg_color:#dedee0
+tooltip_bg_color:#0A0C0E
+tooltip_fg_color:#dedee0
+titlebar_bg_color:#0A0C0E
+titlebar_fg_color:#dedee0
+menu_bg_color:#0A0C0E
+menu_fg_color:#dedee0
+link_color:#549687"
 gtk-auto-mnemonics	= 1
 
 # Default Style

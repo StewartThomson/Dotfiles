@@ -32,6 +32,7 @@ export GOPATH=$HOME/go
 export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
 
 export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="/var/lib/flatpak/exports/bin:$PATH"
 
 alias xclip="xclip -selection c"
 

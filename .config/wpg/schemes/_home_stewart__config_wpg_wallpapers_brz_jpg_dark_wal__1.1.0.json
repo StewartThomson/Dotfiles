@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/stewart/.config/wpg/wallpapers/brz.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#050709",
+        "foreground": "#d1d8db",
+        "cursor": "#d1d8db"
+    },
+    "colors": {
+        "color0": "#050709",
+        "color1": "#C9B919",
+        "color2": "#DBCD2C",
+        "color3": "#DCD155",
+        "color4": "#5E7887",
+        "color5": "#748B99",
+        "color6": "#94A3AC",
+        "color7": "#d1d8db",
+        "color8": "#929799",
+        "color9": "#C9B919",
+        "color10": "#DBCD2C",
+        "color11": "#DCD155",
+        "color12": "#5E7887",
+        "color13": "#748B99",
+        "color14": "#94A3AC",
+        "color15": "#d1d8db"
+    }
+}

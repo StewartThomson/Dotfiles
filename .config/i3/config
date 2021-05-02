@@ -4,14 +4,14 @@
 
 set $mod Mod4
 set $alt Mod1
-set $coloract "#cb6b42"
-set $colorin "#8c492d"
+set $coloract "#549687"
+set $colorin "#3a675c"
 set $terminal i3-sensible-terminal
-set_from_resource $color15 i3wm.color15 "#ebe5e3"
-set_from_resource $split i3wm.color10 "#E28A70"
-set_from_resource $coloru i3wm.color2 "#E28A70"
-set_from_resource $color0 i3wm.color0 "#103342"
-set_from_resource $color8 i3wm.color8 "#a4a09e"
+set_from_resource $color15 i3wm.color15 "#dedee0"
+set_from_resource $split i3wm.color10 "#98989A"
+set_from_resource $coloru i3wm.color2 "#98989A"
+set_from_resource $color0 i3wm.color0 "#0A0C0E"
+set_from_resource $color8 i3wm.color8 "#9b9b9c"
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -186,7 +186,7 @@ hide_edge_borders both
 gaps inner 15
 gaps outer 15
 smart_gaps inverse_outer
-smart_borders on
+smart_borders
 
 ###### STARTUP ######
 

@@ -1,10 +1,10 @@
 [colors]
-background = ${xrdb:color8:#a4a09e}
-foreground = ${xrdb:color15:#ebe5e3}
-active = #cb6b42
-inactive = #8c492d
-highlight = ${xrdb:color2:#E28A70}
-error = ${xrdb:color9:#FF8653}
+background = ${xrdb:color8:#9b9b9c}
+foreground = ${xrdb:color15:#dedee0}
+active = #549687
+inactive = #3a675c
+highlight = ${xrdb:color2:#98989A}
+error = ${xrdb:color9:#6ABCA9}
 
 [bar/bottom]
 monitor = ${env:MONITOR:}
@@ -148,9 +148,9 @@ label-muted = 🔇 muted
 label-muted-foreground = #666
 
 ; Only applies if <ramp-volume> is used
-ramp-volume-0 = 🔈
-ramp-volume-1 = 🔉
-ramp-volume-2 = 🔊
+;ramp-volume-0 = 🔈
+;ramp-volume-1 = 🔉
+;jamp-volume-2 = 🔊
 
 ; Right and Middle click (unreleased)
 click-right = pavucontrol &
