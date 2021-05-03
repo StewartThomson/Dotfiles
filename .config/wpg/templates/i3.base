@@ -186,7 +186,7 @@ hide_edge_borders both
 gaps inner 15
 gaps outer 15
 smart_gaps inverse_outer
-smart_borders
+smart_borders yes
 
 ###### STARTUP ######
 
