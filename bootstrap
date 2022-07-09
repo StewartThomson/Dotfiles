@@ -3,8 +3,11 @@
 sudo apt-get update
 
 sudo apt-get install -y \
+	polybar \
+	curl \
+	make \
 	arc-theme \
-	imagemagick
+	imagemagick \
 	make \
 	fish \
 	flameshot \
@@ -65,7 +68,7 @@ rm -rf build/
 mkdir -p build && cd build/
 meson ..
 ninja
-mv i3 /usr/bin/i3
+sudo mv i3 /usr/bin/i3
 cd ../../
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
