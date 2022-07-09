@@ -1,0 +1,8 @@
+fd
+fzf
+gh
+jq
+k9s
+kind
+krew
+thefuck

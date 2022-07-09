@@ -68,8 +68,10 @@ ninja
 mv i3 /usr/bin/i3
 cd ../../
 
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+xargs brew install < brew.txt
 
-chsh -s /usr/bin/fish
+chsh -s /usr/bin/zsh
 
 sudo cp i3.desktop /usr/share/xsessions
 
