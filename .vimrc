@@ -46,7 +46,6 @@ cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
 autocmd BufWritePre * %s/\s\+$//e
 
 let base16colorspace=256
-colorscheme base16-gruvbox-dark-hard
 
 hi Normal ctermbg=none
 hi NonText ctermbg=none

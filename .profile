@@ -37,3 +37,5 @@ export PATH="/var/lib/flatpak/exports/bin:$PATH"
 alias xclip="xclip -selection c"
 
 export AWS_SDK_LOAD_CONFIG=1
+#eval "$(/bin/brew shellenv)"
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"

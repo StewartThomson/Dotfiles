@@ -70,6 +70,7 @@ cd ../../
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 xargs brew install < brew.txt
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 chsh -s /usr/bin/zsh
 

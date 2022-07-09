@@ -50,7 +50,6 @@ configuration {
 /*	window-format: "{w}    {i}{c}   {t}";*/
 /*	click-to-exit: true;*/
 /*	show-match: true;*/
-	theme: "~/.cache/wal/colors-rofi-dark";
 /*	color-normal: "#00041E23", "#ECF0C1", "#041E23", "#041E23", "#9575cd";*/
 /*	color-urgent: ;*/
 /*	color-active: ;*/
@@ -138,3 +137,6 @@ configuration {
 /*	me-accept-custom: "Control+MouseDPrimary";*/
 
 }
+
+@theme "~/.cache/wal/colors-rofi-light"
+

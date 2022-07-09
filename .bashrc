@@ -151,3 +151,4 @@ fi
 [[ -z ${XDG_DATA_DIRS:-} ]] && export XDG_DATA_DIRS="/usr/local/share:/usr/share"
 # a set of preference ordered base directories relative to which configuration files should be searched
 [[ -z ${XDG_CONFIG_DIRS:-} ]] && export XDG_CONFIG_DIRS="/etc/xdg"
+export GPG_TTY=$(tty)

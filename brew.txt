@@ -6,3 +6,4 @@ k9s
 kind
 krew
 thefuck
+zsh

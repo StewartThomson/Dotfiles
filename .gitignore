@@ -4,3 +4,4 @@ fish/.config/fish/conf.d
 *.pyc
 vim/.vim/bundle
 neovim/.config/nvim/plugged
+i3-gaps/
